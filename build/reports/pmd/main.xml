@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2016-05-25T11:19:54.914">
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\Application.java">
+<violation beginline="7" endline="13" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.uacm" class="Application" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="9" endline="9" begincolumn="33" endcolumn="45" rule="UseVarargs" ruleset="Design" package="edu.uacm" class="Application" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="9" endline="9" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm" class="Application" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\MvcConfig.java">
+<violation beginline="7" endline="21" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="10" endline="10" begincolumn="40" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm" class="MvcConfig" method="addViewControllers" variable="registry" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'registry' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\controller\PeticionController.java">
+<violation beginline="16" endline="47" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.controller" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="18" endline="18" begincolumn="30" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="edu.uacm.controller" class="PeticionController" variable="log" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="30" endcolumn="75" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="edu.uacm.controller" class="PeticionController" variable="log" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="20" endline="21" begincolumn="9" endcolumn="40" rule="DefaultPackage" ruleset="Controversial" package="edu.uacm.controller" class="PeticionController" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="21" endline="21" begincolumn="25" endcolumn="39" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="edu.uacm.controller" class="PeticionController" variable="peticionService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="17" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="edu.uacm.controller" class="PeticionController" method="redireccionar" variable="user" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'user' could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="17" endcolumn="25" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="edu.uacm.controller" class="PeticionController" method="redireccionar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="31" endline="31" begincolumn="17" endcolumn="25" rule="GuardDebugLogging" ruleset="Jakarta Commons Logging" package="edu.uacm.controller" class="PeticionController" method="redireccionar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-jakarta-commons.html#GuardDebugLogging" priority="3">
+debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+</violation>
+<violation beginline="39" endline="39" begincolumn="41" endcolumn="65" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.controller" class="PeticionController" method="recibirParametros" variable="user" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'user' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="25" rule="GuardLogStatement" ruleset="Jakarta Commons Logging" package="edu.uacm.controller" class="PeticionController" method="recibirParametros" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-jakarta-commons.html#GuardLogStatement" priority="2">
+There is log block not surrounded by if
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="25" rule="GuardDebugLogging" ruleset="Jakarta Commons Logging" package="edu.uacm.controller" class="PeticionController" method="recibirParametros" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-jakarta-commons.html#GuardDebugLogging" priority="3">
+debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\dao\VehiculoDao.java">
+<violation beginline="7" endline="7" begincolumn="47" endcolumn="48" rule="ShortVariable" ruleset="Naming" package="edu.uacm.dao" class="VehiculoDao" method="obtenerVehiculoPorId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\dao\impl\VehiculoDaoImpl.java">
+<violation beginline="17" endline="45" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.dao.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="19" endline="20" begincolumn="9" endcolumn="34" rule="DefaultPackage" ruleset="Controversial" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="20" endline="20" begincolumn="22" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" variable="jdbcTemplate" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="54" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="obtenerVehiculoPorId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="23" endline="23" begincolumn="46" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="obtenerVehiculoPorId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="obtenerVehiculoPorId" variable="query" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'query' could be declared final
+</violation>
+<violation beginline="27" endline="36" begincolumn="17" endcolumn="19" rule="OnlyOneReturn" ruleset="Controversial" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="obtenerVehiculoPorId" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="30" endline="30" begincolumn="62" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="mapRow" variable="rowNum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rowNum' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="48" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="mapRow" variable="rs" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rs' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="33" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="mapRow" variable="vehiculo" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'vehiculo' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="17" endcolumn="28" rule="OnlyOneReturn" ruleset="Controversial" package="edu.uacm.dao.impl" class="VehiculoDaoImpl" method="obtenerVehiculoPorId" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\domain\Accesorio.java">
+<violation beginline="14" endline="61" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="18" endline="18" begincolumn="22" endcolumn="23" rule="ShortVariable" ruleset="Naming" package="edu.uacm.domain" class="Accesorio" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="37" endline="37" begincolumn="32" endcolumn="33" rule="ShortVariable" ruleset="Naming" package="edu.uacm.domain" class="Accesorio" method="setId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="37" endline="37" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="Accesorio" method="setId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="31" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="Accesorio" method="setNombre" variable="nombre" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'nombre' is not assigned and could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="33" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="Accesorio" method="setVehiculo" variable="vehiculo" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'vehiculo' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\domain\User.java">
+<violation beginline="6" endline="30" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Naming" package="edu.uacm.domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortClassName" priority="4">
+Avoid short class names like User
+</violation>
+<violation beginline="6" endline="30" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="14" endline="14" begincolumn="31" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="User" method="setNombre" variable="nombre" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'nombre' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="29" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="User" method="setEdad" variable="edad" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'edad' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\domain\Vehiculo.java">
+<violation beginline="15" endline="44" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="18" endline="18" begincolumn="22" endcolumn="23" rule="ShortVariable" ruleset="Naming" package="edu.uacm.domain" class="Vehiculo" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="24" endline="24" begincolumn="33" endcolumn="47" rule="UnusedPrivateField" ruleset="Unused Code" package="edu.uacm.domain" class="Vehiculo" variable="lista_accesorio" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'lista_accesorio'.
+</violation>
+<violation beginline="24" endline="24" begincolumn="33" endcolumn="47" rule="VariableNamingConventions" ruleset="Naming" package="edu.uacm.domain" class="Vehiculo" variable="lista_accesorio" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lista_accesorio' is not final.
+</violation>
+<violation beginline="30" endline="30" begincolumn="32" endcolumn="33" rule="ShortVariable" ruleset="Naming" package="edu.uacm.domain" class="Vehiculo" method="setId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="30" endline="30" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="Vehiculo" method="setId" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="31" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.domain" class="Vehiculo" method="setModelo" variable="modelo" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'modelo' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\Serch\Documents\workspace-sts-3.7.3.RELEASE\Practica06\src\main\java\edu\uacm\service\impl\PeticionServiceimpl.java">
+<violation beginline="14" endline="39" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="edu.uacm.service.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="16" endline="16" begincolumn="30" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="edu.uacm.service.impl" class="PeticionServiceimpl" variable="log" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="30" endcolumn="75" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="edu.uacm.service.impl" class="PeticionServiceimpl" variable="log" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="19" endline="19" begincolumn="37" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="edu.uacm.service.impl" class="PeticionServiceimpl" method="recibirPeticion" variable="user" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'user' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="17" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="edu.uacm.service.impl" class="PeticionServiceimpl" method="obtenerUsuarios" variable="usuarios" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'usuarios' could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="34" endcolumn="43" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="edu.uacm.service.impl" class="PeticionServiceimpl" method="obtenerUsuarios" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="31" endline="31" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="edu.uacm.service.impl" class="PeticionServiceimpl" method="obtenerUsuarios" variable="u" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like u
+</violation>
+<violation beginline="31" endline="31" begincolumn="25" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="edu.uacm.service.impl" class="PeticionServiceimpl" method="obtenerUsuarios" variable="u" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'u' could be declared final
+</violation>
+</file>
+</pmd>
